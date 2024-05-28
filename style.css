@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "DM Serif Display", serif; */
+  font-family: "Karla", sans-serif;
+}
+ul li {
+  list-style: none;
+}
+/*genral*/
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 11%;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav .btn {
+  width: 150px;
+  height: 45px;
+  border: 2px solid hsl(256, 26%, 20%);
+  background: white;
+  color: hsl(256, 26%, 20%);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main#showcase {
+  height: 80vh;
+  background: hsl(256, 26%, 20%);
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  padding: 0 11%;
+}
+.showcase-content {
+  padding: 12% 0;
+}
+.showcase-content h1 {
+  font-size: 70px;
+  font-family: "DM Serif Display", serif;
+  color: hsl(0, 0%, 98%);
+  line-height: 0.9;
+}
+.showcase-content p {
+  color: hsl(0, 0%, 98%);
+  font-size: 15px;
+  padding: 15px 0;
+  line-height: 1.9;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+.showcase-content .btns {
+  width: 150px;
+  height: 45px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+#showcase img {
+  height: 100vh;
+  padding-top: 10%;
+}
+
+/* showcase*/
+
+.container {
+  padding: 5rem 11%;
+}
+.container h1 {
+  font-size: 70px;
+  font-family: "DM Serif Display", serif;
+  color: hsl(256, 26%, 20%);
+  text-align: center;
+  padding: 7rem 0;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.box {
+  padding: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+.box p {
+  font-size: 20px;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  margin: 0 11%;
+  background-color: hsl(256, 26%, 20%);
+}
+.container2 .btn {
+  width: 150px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1rem;
+  display: inline-block;
+}
+.container2 h1 {
+  font-size: 50px;
+  font-family: "DM Serif Display", serif;
+  color: hsl(0, 0%, 98%);
+  line-height: 0.9;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 4% 11%;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+.icons ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.links h3 {
+  font-weight: bold;
+  color: #aaa;
+  background: hsl(0, 0%, 98%);
+  padding-top: 20px;
+}
+
+.icons {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.icons .logo {
+  margin-top: 12px;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 0 70px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.links ul li {
+  list-style: none;
+  padding: 5px;
+}
+.links ul a {
+  text-decoration: none;
+  color: #aaa;
+}
+.links h4 {
+  padding-bottom: 10px;
+}
+@media (max-width: 480px) {
+  nav ul li {
+    display: none;
+  }
+  main#showcase {
+    width: 100%;
+    height: calc(100vh + 10vh);
+    padding: 0;
+    flex-direction: column-reverse;
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    gap: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  #showcase img {
+    width: 100%;
+    padding: 0;
+    height: 55vh;
+  }
+
+  .showcase-content {
+    width: 100%;
+    padding: 5rem 1.5rem;
+    text-align: center;
+  }
+  .showcase-content h1 {
+    font-size: 55px;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr;
+  }
+  .container2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    gap: 3rem;
+  }
+  .container2 h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  .container {
+    padding: 5rem 0;
+  }
+  .container h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  footer .icons{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+  }
+  hr{
+    margin-top: 60px;
+  }
+  .links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding:50px 0;
+  }
+}
